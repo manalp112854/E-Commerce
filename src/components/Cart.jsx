@@ -58,9 +58,9 @@ export default function Cart() {
   }, [cartItems]);
 
   //email
-  const SERVICE_ID = "service_ism9hou";
-  const TEMPLATE_ID = "template_ryzv0gr";
-  const PUBLIC_KEY = "5ze-NTpf-azbTYzO6";
+  const SERVICE_ID = "";
+  const TEMPLATE_ID = "";
+  const PUBLIC_KEY = "";
   const sendCombinedCartEmail = () => {
     if (!user || !Object.keys(cartItems).length) return;
 
@@ -77,7 +77,7 @@ export default function Cart() {
       product_name: "Combined Cart Summary",
       product_qty: combinedInfo,
       product_price: `$${total.toFixed(2)}`,
-      to_email: "manalpatel.mn2854@gmail.com",
+      to_email: "",
     };
 
     emailjs
